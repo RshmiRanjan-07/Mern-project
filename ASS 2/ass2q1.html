@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration Form</title>
+</head>
+<style>
+    body
+    {
+        font-family: 'Times New Roman', Times, serif;
+        background-color:#f1f2f1;
+    }
+    .form_container
+    {
+        margin:auto;
+        width: 80%;
+        padding:20px;
+        text-align: center;
+        background-color:#dbf7cc;
+    }
+    input[type=text],textarea
+    {
+        width:30%;
+        padding: 15px;  
+        margin: 5px 0 15px 0;    
+        border: none;  
+        background:white; 
+    }
+    div{
+        padding:10px 0;
+    }
+    h1{
+        text-align: center;
+    }
+    .registerbutton
+     {  
+    background-color:#f21408;  
+    color: white;  
+    padding: 16px 20px;  
+    margin: 8px 0;  
+    border: none;   
+    width: 10%;    
+    }  
+
+</style>
+<body>
+    <div class="form_container">
+    <h1>Registration Form</h1>
+    <label>Name:</label>
+    <input type="text" name="Name" placeholder="Enter Your Name" size="20"/><br>
+    <label>Email:</label>
+    <input type="text" name="Email" placeholder="Enter Your Email" size="20" /> <br>
+    <label>Phone:</label>
+    <input type="text" name="Phone" placeholder="Enter your Phone Number" size="11" /> <br>  
+    
+    <div>  
+    <label>Gender:</label><br>  
+        <input type="radio" value="Male" name="gender" checked > Male   
+        <input type="radio" value="Female" name="gender"> Female   
+        <input type="radio" value="Other" name="gender"> Other  
+    </div> 
+    <label>Address:</label>
+    <div>
+        
+        <textarea cols="20" rows="5" placeholder="Enter Your Address"></textarea>
+    </div>
+     <div>
+        <label>Pincode:</label>
+        <input type="text" name="Pincode" placeholder="Enter Your Pincode" size="6" /> <br>
+     </div>
+     <div>
+        <label>Password:</label>
+        <input type="text" name="Password" placeholder="Enter Your Password" size="15" /> <br>
+     </div>
+     <div>
+        <label>Confirm Password:</label>
+        <input type="text" name="Confirm Password" placeholder="Confirm Your Password" size="15" /> <br>
+     </div>
+     <div>
+        <input type="checkbox" name="t&c" value="1"/> I agree with all terms and conditions
+    </div>
+     <div>
+        <button type="submit" class="registerbutton">Register</button>
+     </div>
+    </div>
+</body>
+</html>
